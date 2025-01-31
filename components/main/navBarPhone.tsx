@@ -7,7 +7,6 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
@@ -17,7 +16,7 @@ import ThemeSwitch from "./ThemeSwitch";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 import Link from "next/link";
 
-export function DrawerDemo() {
+export function PhoneNavBar() {
   return (
     <Drawer direction="left" >
       <DrawerTrigger asChild className="md:hidden">
