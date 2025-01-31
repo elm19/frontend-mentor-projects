@@ -18,8 +18,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Card className="rounded overflow-hidden shadow-lg">
-      <Link className="hover:underline" href={link}>
-        <CardHeader className="flex items-center justify-between p-4">
+      <Link className="hover:underline w-full" href={link}>
+        <CardHeader className="flex items-center justify-between p-2">
           <CardTitle className="text-xl font-bold">{title}</CardTitle>
         </CardHeader>
         <div className="overflow-hidden fit-">
