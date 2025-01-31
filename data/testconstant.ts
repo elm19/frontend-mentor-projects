@@ -4,7 +4,7 @@ export const cardData = [
         title: "Card Title 1",
         description: "This is a description for card 1.",
         imageUrl: "/main/qr-code.webp",
-        link: "/main/qr-code.webp"
+        link: "/qr-code"
     },
     {
         id: 2,

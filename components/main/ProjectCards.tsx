@@ -12,9 +12,9 @@ const ProjectCards = ({cards}: {cards: Card[]}) => {
   return (
     <div className="">
 
-    <section className="grid px-12  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="grid px-12 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {cards.map((card, index) => (
-          <ProjectCard key={index} title={card.title} description={card.description} image={card.imageUrl} id={card.id} />
+          <ProjectCard key={index} title={card.title} description={card.description} image={card.imageUrl} id={card.id}  link={card.link}/>
         ))}
     </section>
     </div>

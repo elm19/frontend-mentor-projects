@@ -7,7 +7,7 @@ import { cardData } from "@/data/testconstant";
 export default function Home() {
   return (
     <main className="relative flex gap-16 flex-col top-16 text-center font-[family-name:var(--font-geist-mono)] ">
-      <div className="w-full flex  shadow-lg flex-col gap-4 main px-9 py-16 mb-10">
+      <div className="w-full flex flex-col gap-4 main px-9 py-8 border-8 border-black">
         <h1 className="font-bold m-auto max-w-3xl text-3xl md:text-5xl dark:text-white ">
           Showcasing{" "}
           <span className="underline max-w-3xl text-blue-900">

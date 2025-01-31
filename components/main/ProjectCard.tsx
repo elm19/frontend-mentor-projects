@@ -8,6 +8,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   id: number;
+  link:string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -15,10 +16,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   image,
   id,
+  link
 }) => {
   return (
-    <Card className="max-w-sm rounded overflow-hidden shadow-lg">
-      <Link className="hover:underline" href={`/${id}`}>
+    <Card className="rounded overflow-hidden shadow-lg">
+      <Link className="hover:underline" href={link}>
         <CardHeader className="flex items-center justify-between p-4">
           <CardTitle className="text-xl font-bold">{title}</CardTitle>
         </CardHeader>
@@ -33,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
       </Link>
       <CardContent className="p-4">
-        <p className="text-gray-700 text-base">{description}</p>
+        <p className="text-gray-700 dark:text-gray-300 text-base">{description}</p>
       </CardContent>
     </Card>
   );
