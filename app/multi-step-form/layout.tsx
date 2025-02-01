@@ -3,7 +3,7 @@ import "./globals.css";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400","500", "700"],
 });
 
 export const metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ubuntu.className} bg-[#eef5ff] w-svw h-svh min-h-96 md:flex md:justify-center md:items-center md:text-center`}
+        className={`${ubuntu.className} bg-[#eef5ff] w-svw h-svh min-w-96 md:flex md:justify-center  md:h-auto md:min-h-svh overflow-x-hidden md:items-center md:text-center`}
       >
         {children}
       </body>
