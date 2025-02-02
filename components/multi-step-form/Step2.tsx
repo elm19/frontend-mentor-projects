@@ -166,7 +166,7 @@ const Step1 = ({ setCurrentStep, setUserInput, userInput}: step2Props) => {
         <div className="fixed bottom-0 left-0 right-0 bg-white w-full flex justify-between h-20 p-4 px-10 items-center md:relative md:bg-transparent md:h-auto md:p-0 md:top-10">
           <Button
             variant="ghost"
-            className="text-[#012a5a] font-bold"
+            className="hover:text-[#012a5a] text-[#9699ab] font-bold"
             onClick={() => setCurrentStep(1)}
           >
             Go Back

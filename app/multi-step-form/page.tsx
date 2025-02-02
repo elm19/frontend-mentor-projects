@@ -10,26 +10,28 @@ export interface userInput {
   name?: string;
   email?: string;
   phoneNumber?: string;
-  yearly?: boolean,
-  plan?: string
+  yearly: boolean,
+  plan?: string,
+  onlineService?: boolean,
+  largerStorage?: boolean,
+  customProfile?: boolean,
 }
 const MultiStepForm = () => {
   const [userInput, setUserInput] = useState<userInput>({
     name:"",
     email: "",
     phoneNumber: "",
+    yearly: false,
   });
 
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(3);
   console.log(userInput)
   return (
-    // 940;600
     <main className="w-full md:w-[940px] flex flex-col md:flex-row md:bg-white md:rounded-[20px] min-w-[600px] md:p-4 items-center gap-x-12">
       <SideBar currentStep={currentStep} />
       {currentStep === 1 && <Step1 userInput={userInput} setUserInput={setUserInput}  setCurrentStep={setCurrentStep} />}
       {currentStep === 2 && <Step2 userInput={userInput} setCurrentStep={setCurrentStep} setUserInput={setUserInput}  />}
-      {/* {currentStep === 3 && <Step3 userInput={userInput} setCurrentStep={setCurrentStep} setUserInput={setUserInput} />} */}
-      {currentStep === 3 && <Step3 />}
+      {currentStep === 3 && <Step3 userInput={userInput} setCurrentStep={setCurrentStep} setUserInput={setUserInput} />}
 
       < Switch className="absolute top-96 bg-black"/>
 
