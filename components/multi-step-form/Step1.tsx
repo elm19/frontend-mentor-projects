@@ -47,6 +47,7 @@ const Step1 = ({setCurrentStep, userInput, setUserInput} : step1Props) => {
   function onSubmit(values: z.infer<typeof formStep1SchemaStep>) {
     setCurrentStep(2)
     setUserInput({
+      ...userInput,
       name:values.name,
       email:values.email,
       phoneNumber:values.phoneNumber
